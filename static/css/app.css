@@ -1,0 +1,19 @@
+.container {
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr 1fr; 
+    grid-template-rows: 1fr 1fr; 
+    gap: 0px 0px; 
+    grid-template-areas: 
+      ". . . ."
+      ". . . ."; 
+    width: 100%; 
+}
+
+img{
+  transition: transform 0.3s ease-out;
+}
+
+img:hover{
+  transform: scale(1.05);
+  transition: transform 0.3s ease-out;
+}
