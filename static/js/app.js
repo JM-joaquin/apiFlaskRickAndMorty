@@ -8,8 +8,7 @@ const character = (number) =>{
         });
 }
 
-const allCharacter = () =>{
-    let page = 6;
+const allCharacter = (page) =>{
     return fetch(`${api}/allCharacters/${page}`)
     .then(response => response.json())
     .then(data => {
@@ -21,18 +20,22 @@ const allCharacter = () =>{
 const all_char = async () => {
     const content = document.getElementById("content")
     let data = await allCharacter()
-    console.log("aca pasa algo " + data.results.length)
-    for (let i = 0; i < data.results.length; i++) {
-        content.innerHTML += `
-        <img class="m-2" src=${data.results[i].image}></img>
-        `     
-    } 
+    console.log(data);
+    for (let i = 1; i < data.info.pages; i++) {
+        data = await allCharacter(i)
+        for (let i = 0; i < data.results.length; i++) {
+            content.innerHTML += `
+            <img class="m-2" src=${data.results[i].image}></img>
+            `     
+        }
+    }
 }
 
 const id_char = async () => {
     const content = document.getElementById("content")
     let id = document.getElementById("id");
     let data = await character(id.value);
+    console.log(data);
     content.innerHTML = `
     <div>
         <img src=${data.image}></img>
