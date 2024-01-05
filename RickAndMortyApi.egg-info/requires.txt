@@ -1,1 +1,6 @@
 Flask
+
+[dev]
+
+[dev:platform_system != "AIX" and platform_python_implementation != "Jython"]
+pygame==1.9.6

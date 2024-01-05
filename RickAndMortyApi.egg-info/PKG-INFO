@@ -2,3 +2,5 @@ Metadata-Version: 2.1
 Name: RickAndMortyApi
 Version: 0.1.0
 Requires-Dist: Flask
+Provides-Extra: dev
+Requires-Dist: pygame==1.9.6; (platform_system != "AIX" and platform_python_implementation != "Jython") and extra == "dev"
