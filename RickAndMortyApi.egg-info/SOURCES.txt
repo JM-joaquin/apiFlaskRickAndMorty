@@ -1,0 +1,6 @@
+setup.py
+RickAndMortyApi.egg-info/PKG-INFO
+RickAndMortyApi.egg-info/SOURCES.txt
+RickAndMortyApi.egg-info/dependency_links.txt
+RickAndMortyApi.egg-info/requires.txt
+RickAndMortyApi.egg-info/top_level.txt
