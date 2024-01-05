@@ -31,7 +31,6 @@ numpy==1.22.4
 openai==0.27.6
 opencv-python==4.5.5.64
 platformdirs==3.8.0
-pygame==2.1.2
 PyPDF2==3.0.1
 requests==2.30.0
 SQLAlchemy==2.0.19
