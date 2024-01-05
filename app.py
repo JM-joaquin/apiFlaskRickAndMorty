@@ -24,4 +24,4 @@ def all(page=None):
     return data
 
 if __name__ == '__main__':
-    app.run(port=3000, debug = True)
+    app.run(port=8080, debug = True)
