@@ -43,3 +43,4 @@ virtualenv==20.23.1
 Werkzeug==2.3.6
 WTForms==3.0.1
 yarl==1.9.2
+pygame==1.9.6; platform_system != 'AIX' and platform_python_implementation != 'Jython'

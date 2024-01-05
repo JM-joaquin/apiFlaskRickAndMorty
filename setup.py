@@ -9,4 +9,7 @@ setup(
         "Flask",
         # Lista de tus dependencias
     ],
+    extras_require={
+        'dev': ['pygame==1.9.6; platform_system != "AIX" and platform_python_implementation != "Jython"']
+    },
 )
