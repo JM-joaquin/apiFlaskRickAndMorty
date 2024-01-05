@@ -1,14 +1,18 @@
 {% extends 'layout.html' %}
 
 {% block body %}
-<div class="card border text-center m-4">
-    <div class="m-3">
-        <h1>Rick and Morty Api Flask</h1>
-        <div class="form-group p-1">
-            <input id="id" class="form-control" type="number" placeholder="Buscar por numero">
+<div class="d-flex justify-content-center p-2 w-100">
+    <div class="card w-25 opacity-75">
+        <div class="card">
+            <div class="card-body text-center">
+                <h1 class="fs-2 fw-bold">Rick and Morty Api Flask</h1>
+                <div class="form-group p-1">
+                    <input id="id" class="form-control" type="number" placeholder="Buscar por número">
+                </div>
+                <button class="m-1 btn btn-primary btn-block" onclick="id_char()">Buscar por número</button>
+                <button class="m-1 btn btn-primary btn-block" onclick="all_char()">Todos</button>
+            </div>
         </div>
-        <button class="m-1 btn btn-primary" onclick="id_char()"> Buscar por numero </button>
-        <button class="m-1 btn btn-primary" onclick="all_char()"> Todos </button>
     </div>
 </div>
 <div class="d-flex justify-content-center">
